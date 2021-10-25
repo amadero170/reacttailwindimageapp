@@ -26,7 +26,7 @@ useEffect(() => {
       <SearchBar searchText = {word=> setTerm(word)}/>
       {!isLoading && images.length === 0 && <h1 className="text-3xl text-blue-600 text-center">No images found</h1>}
     {isLoading ? <h1 className="text-lg text-center">Loading...</h1> : 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 gap-1 mx-auto sm:grid-cols-3 sm:gap-2">
         {images.map(item=><ImageCard key={item.id} image={item}/>)}
       </div>
     }

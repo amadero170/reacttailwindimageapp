@@ -5,7 +5,7 @@ function ImageCard({image}) {
     const tags = image.tags.split(",");
 
     return (
-    <div className="max-w-sm overflow-hidden rounded shadow-xl">
+    <div className="overflow-hidden rounded shadow-xl">
         <img src= {image.webformatURL} alt="random img" />
         <div className="px-6 py-4">
         <div className="text-purple-500 text-lg">{image.user}</div>  
